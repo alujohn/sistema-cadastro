@@ -1,0 +1,95 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Área de Cadastro</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="lib/css/bulma.min.css">
+        <link rel="stylesheet" href="lib/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <section class="section">            
+            <div class="container">                
+                <div class="columns is-centered">                   
+                    <div class="column is-half"> 
+                        <h2 class="title has-text-centered">Cadastro Usuário</h2>    
+                        <form name="formcadastro" action="" method="POST">
+                            <!--NOME-->
+                            <div class="field">
+                                <label class="label">Nome</label>
+                                <div class="control">
+                                    <input type="text" name="login" class="input is-link"  id="login" placeholder="Digite seu nome" required>
+                                </div>
+                            </div>
+
+                            <!--TELEFONE-->
+                            <div class="field">
+                                <label class="label">Telefone</label>
+                                <div class="control">
+                                    <input type="tel" name="telefone" class="input is-link"  id="telefone" placeholder="Ex: (99) 90101-0202" required>
+                                </div>
+                            </div>
+
+                            <!--DATA DE NASCIMENTO-->
+                            <div class="field">
+                                <label class="label">Data de nascimento</label>
+                                <div class="control">
+                                    <input type="date" name="data" class="input is-link"  id="data" required>
+                                </div>
+                            </div>
+
+                            <!--RENDA-->
+                            <div class="field">
+                                <label class="label">Renda</label>
+                                <div class="control">
+                                     <input type="number" pattern="\d+(\.\d{2})?" step="0.01" min="0.01" name="renda" class="input is-link"  id="renda" placeholder="R$ " required>
+                                </div>
+                            </div>
+
+                            <!--STATUS-->
+                            <div class="field">
+                                <label class="label">Status</label>
+                                <div class="control">
+                                    <label class="radio">
+                                      <input type="radio" name="answer" required>
+                                      Ativo
+                                    </label>
+                                    <label class="radio">
+                                      <input type="radio" name="answer" required>
+                                      Inativo
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            
+                            <!-- SENHA -->
+                            <div class="field">
+                                <label class="label">Senha</label>
+                                <div class="control">
+                                    <input type="password" name="senha" class="input is-link"  id="senha" placeholder="Digite sua senha" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Confirmar senha</label>
+                                <div class="control">
+                                    <input type="password" name="confirmarsenha" class="input is-link"  id="confirmarsenha" placeholder="Confirme sua senha" required>
+                                </div>
+                            </div>
+
+                            <!--ACESSAR-->
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button type="button" class="button is-info">Cadastrar</button>
+                                </div>
+                                <div class="control">
+                                    <button type="submit" class="button is-info"><a href="index.html">Voltar</a></button>
+                                </div>
+                            </div>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

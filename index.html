@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Sistema de Cadastro</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="lib/css/bulma.min.css">
+        <link rel="stylesheet" href="lib/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <section class="section">            
+            <div class="container">                
+                <div class="columns is-centered">                   
+                    <div class="column is-half">
+                        <!-- IMAGEM -->
+                        <div class="level-item has-text-centered">
+                            <figure class="image is-128x128">
+                                <img src="lib/img/user.svg">
+                            </figure>
+                        </div>
+                        
+                        <h2 class="title has-text-centered">Login</h2>    
+                        <form name="formlogin" action="" method="POST">
+                            <!--LOGIN-->
+                            <div class="field">
+                                <label class="label">Usuário</label>
+                                <div class="control">
+                                    <input type="text" name="login" class="input is-link is-focused"  id="login" placeholder="Digite seu nome de usuário" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Senha</label>
+                                <div class="control">
+                                    <input type="password" name="senha" class="input is-link"  id="senha" placeholder="Digite sua senha" required>
+                                </div>
+                            </div>
+
+                            <!--ACESSAR-->
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button type="submit" class="button is-info">Acessar</button>
+                                </div>
+                            </div>
+                            
+                            <label class="label has-text-centered">Ainda não tem conta? <a href="cadastro.html">Cadastre-se aqui.</a></label>
+
+                        </form>    
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </body>
+</html>
